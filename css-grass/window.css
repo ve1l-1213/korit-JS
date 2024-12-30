@@ -1,0 +1,154 @@
+
+
+
+
+
+@import url(https://i.insider.com/56e71048dd0895ed158b468d?width=800&format=jpeg&auto=webp);
+@import url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Superman_shield.svg/1200px-Superman_shield.svg.png);
+@import url(https://logos-world.net/wp-content/uploads/2021/08/Flash-Logo.png);
+@import url(https://logos-world.net/wp-content/uploads/2023/05/Aquaman-Logo.png);
+@import url(https://images.desenio.com/zoom/wb0125-8batman-portrait50x70-55544-10774.jpg);
+
+
+
+.window{
+    border: 1px solid rgb(255, 255, 255);
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
+    transition: all 0.5s;
+
+    &:hover {
+        background-color: rgb(250, 250, 250);
+        box-shadow: 1px 1px 10px 3px rgb(255, 255, 241);
+    }
+
+}
+#window1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:all 0.5s;
+
+    #bat{
+        opacity: 0%;
+        width: 50%;
+        height: 50%;
+        transition: all 0.5s;
+    }
+
+    
+    
+    &:hover {
+        border-radius: 52%;
+        background-color: rgb(250, 250, 250);
+        box-shadow: 1px 1px 10px 3px rgb(255, 255, 241);
+
+        #bat{
+            opacity: 100%;
+            width: 100%;
+            height: 100%;
+        }
+
+        
+    }
+
+    
+}
+
+#bat-man {
+    opacity: 0%;
+    width: 50%;
+    height: 50%;
+    transition: all 0.5s;
+}
+
+#window2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:all 0.5s;
+
+    #sup{
+        opacity: 0%;
+        width: 50%;
+        height: 50%;
+        transition: all 0.5s;
+    }
+    
+    &:hover {
+        border-radius: 52%;
+        background-color: rgb(250, 250, 250);
+        box-shadow: 1px 1px 10px 3px rgb(255, 255, 241);
+
+        #sup{
+            opacity: 100%;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+#window3 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:all 0.5s;
+
+    #flash{
+        opacity: 0%;
+        width: 50%;
+        height: 50%;
+        transition: all 0.5s;
+    }
+    
+    &:hover {
+        border-radius: 52%;
+        background-color: rgb(250, 250, 250);
+        box-shadow: 1px 1px 10px 3px rgb(255, 255, 241);
+
+        #flash{
+            opacity: 100%;
+            width: 180%;
+            height: 110%;
+        }
+    }
+}
+
+#window4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:all 0.5s;
+
+    #aqua{
+        opacity: 0%;
+        width: 50%;
+        height: 50%;
+        transition: all 0.5s;
+    }
+    
+    &:hover {
+        border-radius: 52%;
+        background-color: rgb(250, 250, 250);
+        box-shadow: 1px 1px 10px 3px rgb(255, 255, 241);
+
+        #aqua{
+            opacity: 100%;
+            width: 140%;
+            height: 120%;
+        }
+    }
+}
+
+.main-window {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    background-color: black;
+    width: 500px;
+    height: 500px;
+
+}

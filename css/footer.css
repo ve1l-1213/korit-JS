@@ -1,0 +1,27 @@
+.footer-container {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.footer-link {
+    margin: 0 8px 12px;
+    color: #737373;
+    font-size: 12px;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.footer-copyright {
+    color: #737373;
+    font-size: 12px;
+
+    &:span{
+        rotate: (180);
+    }
+}
+
+footer > div:nth-last-of-type(2) > span {
+    margin-left: 16px;
+}

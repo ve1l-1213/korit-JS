@@ -1,0 +1,24 @@
+main {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 44px;
+}
+.main-layout {
+    width: 350px;
+    margin-top: 12px;
+}
+
+.main-border {
+    box-sizing: border-box;
+    border: 1px solid #dbdbdb;
+    margin: 10px 0;
+}
+
+.main-mid {
+
+}
+
+.main-bottom {
+
+}

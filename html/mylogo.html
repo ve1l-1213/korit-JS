@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 레이아웃</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header {
+            background-color: #f4f4f4;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input {
+            padding: 5px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .search-bar button {
+            margin-left: 10px;
+            padding: 5px 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .search-bar button:hover {
+            background-color: #0056b3;
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            width: 200px;
+            padding: 20px;
+            text-align: center;
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            font-weight: bold;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fafafa;
+            border-left: 1px solid #ddd;
+        }
+
+        .image-box {
+            width: 80%;
+            height: 60%;
+            border: 2px dashed #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #888;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hello, World!</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="검색">
+            <button>검색</button>
+        </div>
+    </header>
+    <div class="container">
+        <nav>
+            네비게이션바
+        </nav>
+        <main>
+            <div class="image-box">
+                이미지
+            </div>
+        </main>
+    </div>
+</body>
+</html>

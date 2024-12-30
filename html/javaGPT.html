@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java 다운로드</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* 상단 네비게이션 바 */
+        header {
+            background-color: #3a75b0;
+            color: white;
+            padding: 25px 45px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            display: flex ;
+            align-items: center;
+        }
+
+        header .logo img {
+            width: 40px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        header .logo span {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        header nav {
+            display: flex;
+            align-items: center;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: orange; /* 커서를 올렸을 때 주황색으로 변경 */
+        }
+
+        header .search-box {
+            display: flex;
+            align-items: center;
+            margin-left: 30px;
+        }
+
+        header .search-box input {
+            padding: 5px 10px;
+            font-size: 14px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            margin-right: 5px;
+        }
+
+        header .search-box button {
+            padding: 5px 10px;
+            font-size: 14px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        header .search-box button:hover {
+            background-color: #ddd;
+        }
+
+        /* 메인 컨텐츠 */
+        .content {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .content h1 {
+            font-weight: lighter;
+            font-size: 36px;
+            margin: 20px 0;
+            color: #6d6d6d;
+        }
+
+        .content p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .content .btn {
+            display: inline-block;
+            background-color: #198754;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+            
+            
+        }
+
+        .content .btn:hover {
+            background-color: #125f3b;
+            text-decoration-line:none;
+
+        }
+
+        .content img {
+            margin-top: 30px;
+            width: 85%; /* 화면 크기에 따라 반응형 크기 */
+            max-width: 400px; /* 최대 크기 제한 */
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .content a {
+            font-size: 14px;
+            color: #0066cc;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .content a:hover {
+            text-decoration: underline;
+        }
+
+        /* 하단 푸터 */
+        .footer {
+            
+            background-color: #666666;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .footer p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        .footer button {
+            
+            background-color: #666666;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .footer button:hover {
+            background-color: #ffffff;
+            color: #000;
+            transition: color 0.5s;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- 헤더 -->
+    <header>
+        <div class="logo">
+            
+            <span>Java</span>
+        </div>
+        <nav>
+            <a href="#">다운로드</a>
+            <a href="#">Developer Resources</a>
+            <a href="#">도움말</a>
+        </nav>
+        <div class="search-box">
+            <input type="text" placeholder="검색">
+            <button>검색</button>
+        </div>
+    </header>
+
+    <!-- 메인 컨텐츠 -->
+    <div class="content">
+        <p>macOS의 일부 Java 8 사용자에게 필요한 수동 업데이트</p>
+        <h1>데스크톱 애플리케이션용 Java 얻기</h1>
+        <a class="btn" href="#">Java 다운로드</a>
+        <p>
+            <a href="#">Java란?</a> | <a href="#">설치 해제 도움말</a>
+        </p>
+        <img src="https://www.java.com/content/published/api/v1.1/assets/CONTAC42441D88644D75A6C7B964A1FA1601/native?cb=_cache_9929&channelToken=1f7d2611846d4457b213dfc9048724dc" alt="사용자 이미지">
+    </div>
+
+    <!-- 푸터 -->
+    <div class="footer">
+        <p>JDK 다운로드를 찾는 소프트웨어 개발자입니까?
+            <button>OpenJDK 초기 액세스 구축</button>
+        <button>Java SE Development Kit</button>
+        </p>
+        
+        <a href="#">© Oracle | 언어 선택 | 지원 | 개인 정보 보호 정책 | 쿠키 환경설정 | 사용 약관 | 등록 상표</a>
+    </div>
+</body>
+</html>

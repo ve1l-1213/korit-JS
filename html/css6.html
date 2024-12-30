@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .box1 > div > div {
+        border: 10px solid#222222;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+
+        & > div > div {
+            width: 50px;
+            height: 50px;
+            background-color: white;
+        }
+    }
+    .box1 + div > div > div {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(0, 0, 255);
+    }
+    .checkbox-group {
+        box-sizing: border-box;
+        border: 1px solid #222222;
+        padding: 20px;
+
+        & input[type="checkbox"] {
+            display: none;
+        }
+
+        & input[type="checkbox"] + label {
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid #222222;
+            padding: 5px;
+            width: 35px;
+            height: 35px;
+            background-clip: content-box;
+        }
+
+        & input[type="checkbox"]:checked + label {
+            background-color: red;
+        }
+        
+    }
+
+    input[type="text"] {
+        box-sizing: border-box;
+        margin: 20px 0px;
+        padding: 0 20px;
+        outline: none;
+        box-sizing: border-box;
+        width: 400px;
+        height: 50px;
+    }
+    
+    input[type="text"]:focus {
+        background-color: violet;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div>
+            <div></div>
+        </div>
+    </div>
+    <div>
+        <div>
+            <div></div>
+        </div>
+    </div>
+
+    <div class="checkbox-group">
+        <input type="checkbox" id="cdk1">
+        <label for="cdk1"></label>
+        <label for="cdk1">Java</label>
+
+        <input type="checkbox" id="cdk2">
+        <label for="cdk2"></label>
+        <label for="cdk2">Python</label>
+
+        <input type="checkbox" id="cdk3">
+        <label for="cdk3"></label>
+        <label for="cdk3">HRML</label>
+
+        <input type="checkbox" id="cdk4">
+        <label for="cdk4"></label>
+        <label for="cdk4">JS</label>
+    </div>
+
+    <div>
+        <input type="text">
+    </div>
+</body>
+</html>

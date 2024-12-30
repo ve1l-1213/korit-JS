@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div *:not(p:nth-of-type(2)),
+        div*:not(p:nth-last-of-type(2)) {
+            background-color: red;
+
+        }
+
+        div > p:nth-of-type(2) {
+            background-color: rgb(13, 252, 21);
+        }
+
+        div > p:nth-last-of-type(2) {
+            background-color: yellow;
+        }
+
+        h1:nth-of-type(2n - 0) {
+            background-color: rgb(46, 33, 224);
+        }
+
+        div > div > .or {
+            background-color: white;
+
+            &::before,
+            &::after {
+                content: "";
+                display: inline-block;
+                margin: 0px 5px;
+                border-top: 1px solid #222222;
+                width: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>text11</h1>
+        <h1>text12</h1>
+        <h1>text13</h1>
+        <h1>text14</h1>
+        <h1>text15</h1>
+        <h1>text16</h1>
+        <h1>text17</h1>
+        <h1>text18</h1>
+        <p>text2</p>
+        <p>text3</p>
+        <p>text4</p>
+        <p>text5</p>
+        <input type="text">
+        <div>
+           <span class="or">OR</span> 
+        </div>
+        
+    </div>
+</body>
+</html>

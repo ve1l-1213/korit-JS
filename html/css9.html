@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1 {
+            width: 100px;
+            height: 100px;
+            margin: 30px 30px;
+            background-color: #4cff00;
+            border: 1px solid transparent;
+            animation-name: shape;
+            animation-duration: 3s;
+            animation-iteration-count:infinite ;
+            background: rgb(2,0,36);
+            background: rgb(152,27,186);
+            background: linear-gradient(90deg, rgba(152,27,186,1) 7%, rgba(0,0,0,1) 46%, rgba(93,6,81,1) 89%);
+        }
+        #box2 {
+            width: 100px;
+            height: 100px;
+            margin: 30px 30px;
+            background-color: #8f06b0;
+            border: 1px solid transparent;
+            animation-name: rotate;
+            animation-duration: 3s;
+            animation-iteration-count:infinite ;
+            background: rgb(27,186,49);
+            background: linear-gradient(90deg, rgba(27,186,49,1) 0%, rgba(20,121,9,1) 46%, rgba(14,93,6,1) 89%);
+        }
+        @keyframes shape {
+            0% {border: 1px solid transparent;}
+            50% {
+                border: 1px solid#000;
+                border-radius: 50%;
+            }
+        }
+        @keyframes rotate {
+            from {transform: rotate(0deg);}
+            to {transform: rotate(45deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id ="box1"></div>
+    <div class="box" id ="box2"></div>
+</body>
+</html>
